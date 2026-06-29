@@ -3,15 +3,18 @@ layout: home
 
 hero:
   name: Ditto
-  text: Web 端操作系统
-  tagline: 支持 Chrome 80、树莓派、教育场景
+  text: WebOS
+  tagline: 开源 · 轻量 · 易于定制 —— 支持 Chrome 80、树莓派、教育场景的 Web 端操作系统
   image:
     src: /logo.svg
-    alt: Ditto
+    alt: Ditto WebOS
   actions:
     - theme: brand
       text: 🚀 快速开始
       link: /quick-start/
+    - theme: alt
+      text: 📖 使用指南
+      link: /quick-start/basic-usage
     - theme: alt
       text: GitHub
       link: https://github.com/Nevino2333/Ditto
@@ -19,22 +22,34 @@ hero:
 features:
   - icon: ⚡
     title: 轻量高效
-    details: 支持 Chrome 80 及更低版本浏览器，在树莓派等低性能设备上流畅运行
+    details: 支持 Chrome 80 及更低版本浏览器，在树莓派等低性能设备上流畅运行。动画可分级控制，确保最佳性能体验。
+    link: /quick-start/installation
+    linkText: 安装部署 →
   - icon: 🔐
     title: Cell 架构
-    details: 前后端对称 Cell 沙盒，IPC 通信，权限管理，支持 iframe/worker/trusted 多种隔离模式
+    details: 前后端对称 Cell 沙盒，IPC 通信，权限管理。支持 iframe-strict、worker、trusted 多种隔离模式，确保应用安全运行。
+    link: /concepts/cell
+    linkText: 了解架构 →
   - icon: 🎨
     title: 深度定制
-    details: 主题系统、动画档位、默认应用关联、全局快捷键，满足教育与企业场景需求
+    details: 主题系统、动画档位、默认应用关联、全局快捷键。满足教育与企业场景需求，打造专属 WebOS 体验。
+    link: /ui/theme
+    linkText: 主题定制 →
   - icon: 📦
     title: 完整生态
-    details: 内置 9 个系统应用 + 应用市场 + CLI 脚手架，第三方应用开发 SDK
+    details: 内置 9 个系统应用 + 应用市场 + CLI 脚手架。第三方应用开发 SDK，轻松扩展系统功能。
+    link: /development/third-party
+    linkText: 应用开发 →
   - icon: 🛡️
     title: 安全沙盒
-    details: iframe-strict 隔离、PermissionManager 权限申请、交互式权限确认对话框
+    details: iframe-strict 隔离、PermissionManager 权限申请、交互式权限确认对话框。第三方应用运行在受限环境中，权限需用户确认。
+    link: /concepts/permission
+    linkText: 权限系统 →
   - icon: 📱
     title: PWA 支持
-    details: 离线可用，预缓存资源，支持移动端响应式布局
+    details: 离线可用，预缓存资源，支持移动端响应式布局。随时随地访问 Ditto，无需网络连接。
+    link: /deployment/production
+    linkText: 生产部署 →
 ---
 
 ## 快速导航

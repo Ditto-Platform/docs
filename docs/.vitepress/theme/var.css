@@ -1,0 +1,114 @@
+/* var.css - Ditto 文档站样式 */
+
+/* ========== 品牌色系 #00dfd9 ========== */
+:root {
+  --vp-c-brand-1: #00dfd9;
+  --vp-c-brand-2: #00c9c3;
+  --vp-c-brand-3: #00b3ad;
+  --vp-c-brand-soft: rgba(0, 223, 217, 0.14);
+}
+
+.dark {
+  --vp-c-brand-1: #00dfd9;
+  --vp-c-brand-2: #00c9c3;
+  --vp-c-brand-3: #00b3ad;
+  --vp-c-brand-soft: rgba(0, 223, 217, 0.24);
+}
+
+/* ========== Hero 标题渐变色 ========== */
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #00dfd9 30%,
+    #3b82f6 70%
+  );
+
+  /* Hero logo 背景光晕 */
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #00dfd9 40%,
+    #3b82f6 60%
+  );
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+.dark {
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #00dfd9 30%,
+    #60a5fa 70%
+  );
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #00dfd9 40%,
+    #60a5fa 60%
+  );
+  --vp-home-hero-image-filter: blur(56px);
+}
+
+/* ========== Brand 按钮 ========== */
+:root {
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #0f172a;
+  --vp-button-brand-bg: #00dfd9;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #0f172a;
+  --vp-button-brand-hover-bg: #00c9c3;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #0f172a;
+  --vp-button-brand-active-bg: #00b3ad;
+}
+
+/* ========== 自定义容器颜色 ========== */
+:root {
+  --vp-custom-block-tip-border: #10b981;
+  --vp-custom-block-tip-text: #047857;
+  --vp-custom-block-tip-bg: rgba(16, 185, 129, 0.06);
+
+  --vp-custom-block-warning-border: #f59e0b;
+  --vp-custom-block-warning-text: #b45309;
+  --vp-custom-block-warning-bg: rgba(245, 158, 11, 0.06);
+
+  --vp-custom-block-danger-border: #ef4444;
+  --vp-custom-block-danger-text: #b91c1c;
+  --vp-custom-block-danger-bg: rgba(239, 68, 68, 0.06);
+
+  --vp-custom-block-info-border: #00dfd9;
+  --vp-custom-block-info-text: #00b3ad;
+  --vp-custom-block-info-bg: rgba(0, 223, 217, 0.06);
+}
+
+.dark {
+  --vp-custom-block-tip-text: #34d399;
+  --vp-custom-block-tip-bg: rgba(16, 185, 129, 0.08);
+
+  --vp-custom-block-warning-text: #fbbf24;
+  --vp-custom-block-warning-bg: rgba(245, 158, 11, 0.08);
+
+  --vp-custom-block-danger-text: #f87171;
+  --vp-custom-block-danger-bg: rgba(239, 68, 68, 0.08);
+
+  --vp-custom-block-info-text: #00dfd9;
+  --vp-custom-block-info-bg: rgba(0, 223, 217, 0.08);
+}
+
+/* ========== Logo 圆角 ========== */
+.VPNav .logo img {
+  border-radius: 8px;
+}
+
+.VPHero .image img {
+  border-radius: 16px;
+}
+
+/* ========== 导航栏毛玻璃 ========== */
+.VPNav {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.dark .VPNav {
+  background: rgba(30, 30, 30, 0.8);
+}
