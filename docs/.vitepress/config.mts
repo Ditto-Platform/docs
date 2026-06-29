@@ -4,7 +4,7 @@ export default defineConfig({
   title: 'Ditto',
   description: 'Ditto WebOS 官方文档',
   lastUpdated: true,
-  base: '/Ditto-docs/',
+  base: '/docs/',
   ignoreDeadLinks: true,
   
   head: [
