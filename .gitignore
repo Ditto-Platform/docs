@@ -4,4 +4,4 @@ src/.vuepress/.cache/
 src/.vuepress/.temp/
 .DS_Store
 *.log
-pnpm-lock.yaml
+bun.lockb
