@@ -1,25 +1,18 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Ditto',
   description: 'Ditto WebOS 官方文档',
   
-  // 主题色
   head: [
     ['link', { rel: 'icon', href: '/logo.svg' }],
-    ['meta', { name: 'theme-color', content: '#72ffee' }],
+    ['meta', { name: 'theme-color', content: '#00dfd9' }],
   ],
   
-  // 主题配置
   themeConfig: {
-    // Logo
     logo: '/logo.svg',
-    
-    // 站点标题
     siteTitle: 'Ditto',
     
-    // 导航栏
     nav: [
       { text: '首页', link: '/' },
       { text: '快速开始', link: '/quick-start/' },
@@ -31,7 +24,6 @@ export default defineConfig({
       { text: 'GitHub', link: 'https://github.com/Nevino2333/Ditto' },
     ],
     
-    // 侧边栏
     sidebar: {
       '/quick-start/': [
         {
@@ -104,24 +96,20 @@ export default defineConfig({
       ],
     },
     
-    // 社交链接
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Nevino2333/Ditto' },
     ],
     
-    // 页脚
     footer: {
       message: 'MIT Licensed',
       copyright: 'Copyright © 2024-present Ditto Platform',
     },
     
-    // 编辑链接
     editLink: {
       pattern: 'https://github.com/Ditto-Platform/Ditto_docs/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页',
     },
     
-    // 最后更新时间
     lastUpdated: {
       text: '最后更新',
       formatOptions: {
@@ -130,29 +118,21 @@ export default defineConfig({
       },
     },
     
-    // 搜索
     search: {
       provider: 'local',
     },
     
-    // 文档页脚
     docFooter: {
       prev: '上一页',
       next: '下一页',
     },
     
-    // 大纲标题
     outline: {
       label: '页面导航',
     },
     
-    // 返回顶部
     returnToTopLabel: '返回顶部',
-    
-    // 侧边栏菜单标签
     sidebarMenuLabel: '菜单',
-    
-    // 深色模式切换
     darkModeSwitchLabel: '主题',
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',

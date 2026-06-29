@@ -10,7 +10,7 @@ hero:
     alt: Ditto
   actions:
     - theme: brand
-      text: 快速开始
+      text: 🚀 快速开始
       link: /quick-start/
     - theme: alt
       text: GitHub
@@ -36,21 +36,6 @@ features:
     title: PWA 支持
     details: 离线可用，预缓存资源，支持移动端响应式布局
 ---
-
-<script setup>
-import { VPTeamMembers } from 'vitepress/theme'
-
-const members = [
-  {
-    avatar: 'https://github.com/Nevino2333.png',
-    name: 'Nevino',
-    title: 'Creator',
-    links: [
-      { icon: 'github', link: 'https://github.com/Nevino2333' },
-    ],
-  },
-]
-</script>
 
 ## 快速导航
 
