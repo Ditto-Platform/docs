@@ -94,21 +94,51 @@
   --vp-custom-block-info-bg: rgba(0, 223, 217, 0.08);
 }
 
-/* ========== Logo 圆角 ========== */
+/* ========== Logo 圆角与样式 ========== */
+.VPNav .logo {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 223, 217, 0.2);
+}
+
 .VPNav .logo img {
-  border-radius: 8px;
+  display: block;
+  border-radius: 12px;
 }
 
 .VPHero .image img {
-  border-radius: 16px;
+  border-radius: 24px;
+  box-shadow: 0 24px 48px rgba(0, 223, 217, 0.25);
 }
 
 /* ========== 导航栏毛玻璃 ========== */
 .VPNav {
   backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
 }
 
 .dark .VPNav {
-  background: rgba(30, 30, 30, 0.8);
+  background: rgba(30, 30, 30, 0.85);
+}
+
+/* ========== 特性卡片 hover 动效 ========== */
+.VPFeature {
+  border-radius: 16px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 223, 217, 0.12);
+}
+
+/* ========== 链接高亮 ========== */
+.vp-doc a {
+  border-radius: 4px;
+  padding: 0 2px;
+  transition: background 0.2s ease;
+}
+
+.vp-doc a:hover {
+  background: var(--vp-c-brand-soft);
 }

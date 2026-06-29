@@ -6,7 +6,7 @@ hero:
   text: WebOS
   tagline: 开源 · 轻量 · 易于定制 —— 支持 Chrome 80、树莓派、教育场景的 Web 端操作系统
   image:
-    src: /logo.svg
+    src: /logo.png
     alt: Ditto WebOS
   actions:
     - theme: brand
