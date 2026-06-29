@@ -4,15 +4,13 @@
   "description": "Ditto WebOS 官方文档站",
   "type": "module",
   "scripts": {
-    "docs:dev": "vuepress dev src",
-    "docs:build": "vuepress build src",
-    "docs:preview": "vuepress preview src"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "vuepress": "^2.0.0-rc.30",
-    "vuepress-theme-plume": "1.0.0-rc.203",
-    "vue": "^3.5.13",
-    "typescript": "^5.7.0"
+    "vitepress": "^1.6.0",
+    "vue": "^3.5.13"
   },
   "engines": {
     "node": ">=18.20.0"

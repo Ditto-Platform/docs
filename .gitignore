@@ -1,7 +1,7 @@
 node_modules/
-src/.vuepress/dist/
-src/.vuepress/.cache/
-src/.vuepress/.temp/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+src/.vuepress/
 .DS_Store
 *.log
 bun.lockb
