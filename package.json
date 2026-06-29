@@ -1,0 +1,19 @@
+{
+  "name": "ditto-docs",
+  "version": "1.0.0",
+  "description": "Ditto WebOS 官方文档站",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vuepress dev src",
+    "docs:build": "vuepress build src",
+    "docs:preview": "vuepress preview src"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-rc.18",
+    "@vuepress/theme-default": "^2.0.0-rc.18",
+    "vue": "^3.5.13"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
