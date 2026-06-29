@@ -1,5 +1,5 @@
 import { viteBundler } from '@vuepress/bundler-vite'
-import { defaultTheme } from '@vuepress/theme-default'
+import { plumeTheme } from 'vuepress-theme-plume'
 import { defineUserConfig } from 'vuepress/cli'
 
 export default defineUserConfig({
@@ -14,17 +14,28 @@ export default defineUserConfig({
 
   bundler: viteBundler(),
 
-  theme: defaultTheme({
+  theme: plumeTheme({
+    // 主题色
+    color: '#72ffee',
+    
+    // Logo
     logo: '/logo.svg',
+    logoDark: '/logo.svg',
+    
+    // GitHub 配置
     repo: 'https://github.com/Ditto-Platform/Ditto_docs',
     docsRepo: 'https://github.com/Ditto-Platform/Ditto_docs',
     docsBranch: 'main',
     docsDir: 'src',
+    
+    // 编辑链接
     editLink: true,
+    
+    // 最后更新时间
     lastUpdated: true,
-    lastUpdatedText: '上次更新',
+    
+    // 贡献者
     contributors: true,
-    contributorsText: '贡献者',
 
     // 导航栏
     navbar: [
@@ -41,60 +52,96 @@ export default defineUserConfig({
     // 侧边栏
     sidebar: {
       '/quick-start/': [
-        { text: '快速开始', collapsible: false, children: [
-          '/quick-start/',
-          '/quick-start/installation',
-          '/quick-start/basic-usage',
-        ] },
+        {
+          text: '快速开始',
+          collapsible: true,
+          children: [
+            '/quick-start/',
+            '/quick-start/installation',
+            '/quick-start/basic-usage',
+          ],
+        },
       ],
       '/concepts/': [
-        { text: '核心概念', collapsible: false, children: [
-          '/concepts/',
-          '/concepts/kernel',
-          '/concepts/cell',
-          '/concepts/ipc',
-          '/concepts/permission',
-          '/concepts/lifecycle',
-        ] },
+        {
+          text: '核心概念',
+          collapsible: true,
+          children: [
+            '/concepts/',
+            '/concepts/kernel',
+            '/concepts/cell',
+            '/concepts/ipc',
+            '/concepts/permission',
+            '/concepts/lifecycle',
+          ],
+        },
       ],
       '/development/': [
-        { text: '开发指南', collapsible: false, children: [
-          '/development/',
-          '/development/third-party',
-          '/development/sdk',
-          '/development/cli',
-          '/development/debugging',
-        ] },
+        {
+          text: '开发指南',
+          collapsible: true,
+          children: [
+            '/development/',
+            '/development/third-party',
+            '/development/sdk',
+            '/development/cli',
+            '/development/debugging',
+          ],
+        },
       ],
       '/deployment/': [
-        { text: '部署运维', collapsible: false, children: [
-          '/deployment/',
-          '/deployment/production',
-          '/deployment/education',
-          '/deployment/configuration',
-          '/deployment/monitoring',
-        ] },
+        {
+          text: '部署运维',
+          collapsible: true,
+          children: [
+            '/deployment/',
+            '/deployment/production',
+            '/deployment/education',
+            '/deployment/configuration',
+            '/deployment/monitoring',
+          ],
+        },
       ],
       '/api/': [
-        { text: 'API 参考', collapsible: false, children: [
-          '/api/',
-          '/api/server',
-          '/api/client',
-          '/api/types',
-        ] },
+        {
+          text: 'API 参考',
+          collapsible: true,
+          children: [
+            '/api/',
+            '/api/server',
+            '/api/client',
+            '/api/types',
+          ],
+        },
       ],
       '/ui/': [
-        { text: 'UI & 主题', collapsible: false, children: [
-          '/ui/',
-          '/ui/components',
-          '/ui/theme',
-          '/ui/icons',
-        ] },
+        {
+          text: 'UI & 主题',
+          collapsible: true,
+          children: [
+            '/ui/',
+            '/ui/components',
+            '/ui/theme',
+            '/ui/icons',
+          ],
+        },
       ],
     },
 
-    // 主题色定制
-    colorMode: 'auto',
-    colorModeSwitch: true,
+    // 插件配置（移除不支持的 markdownEnhance）
+    plugins: {
+      search: true,
+      comment: false,
+    },
+
+    // 社交链接
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/Nevino2333/Ditto' },
+    ],
+
+    // 页脚
+    footer: {
+      message: 'MIT Licensed | Copyright © 2024-present Ditto Platform',
+    },
   }),
 })

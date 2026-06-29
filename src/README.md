@@ -3,6 +3,7 @@ home: true
 heroImage: /logo.svg
 heroText: Ditto WebOS
 tagline: 开源 Web 端操作系统，支持 Chrome 80、树莓派、教育场景
+heroFullScreen: true
 actions:
   - text: 快速开始
     link: /quick-start/
@@ -13,17 +14,22 @@ actions:
 features:
   - title: 轻量高效
     details: 支持 Chrome 80 及更低版本浏览器，在树莓派等低性能设备上流畅运行
+    icon: ⚡
   - title: Cell 架构
     details: 前后端对称 Cell 沙盒，IPC 通信，权限管理，支持 iframe/worker/trusted 多种隔离模式
+    icon: 🔐
   - title: 深度定制
     details: 主题系统、动画档位、默认应用关联、全局快捷键，满足教育与企业场景需求
+    icon: 🎨
   - title: 完整生态
     details: 内置 9 个系统应用 + 应用市场 + CLI 脚手架，第三方应用开发 SDK
+    icon: 📦
   - title: 安全沙盒
     details: iframe-strict 隔离、PermissionManager 权限申请、交互式权限确认对话框
+    icon: 🛡️
   - title: PWA 支持
     details: 离线可用，预缓存资源，支持移动端响应式布局
-footer: MIT Licensed | Copyright © 2024-present Ditto Platform
+    icon: 📱
 ---
 
 ## 快速导航
