@@ -45,6 +45,7 @@ export default defineConfig({
           { text: 'IPC 通信', link: '/concepts/ipc' },
           { text: '权限系统', link: '/concepts/permission' },
           { text: '生命周期', link: '/concepts/lifecycle' },
+          { text: '默认应用关联', link: '/concepts/default-apps' },
         ]
       },
       {
@@ -96,6 +97,7 @@ export default defineConfig({
           { text: 'IPC 通信', link: '/concepts/ipc' },
           { text: '权限系统', link: '/concepts/permission' },
           { text: '生命周期', link: '/concepts/lifecycle' },
+          { text: '默认应用关联', link: '/concepts/default-apps' },
         ]
       },
       {
